@@ -1,0 +1,33 @@
+construct {?s ?p ?o } where {
+  { ?s a core:Grant . ?s ?p ?o }
+  union
+  { ?s a core:PrincipalInvestigatorRole . ?s ?p ?o }
+  union
+  { ?s a core:Address . ?s ?p ?o }
+  union
+  { ?s a core:EducationalTraining . ?s ?p ?o }
+  union
+  { ?s a core:AcademicDegree . ?s ?p ?o . FILTER( regex(str(?s),"individual/degree") )}
+  union
+  { ?s a core:Course . ?s ?p ?o }
+  union
+  { ?s a event:Event . ?s ?p ?o . FILTER( regex(str(?s),"individual/course") )}
+  union
+  { ?s a core:TeacherRole . ?s ?p ?o }
+  union
+  { ?s a core:Position . ?s ?p ?o }
+  union
+  { ?s a foaf:Organization . ?s ?p ?o . FILTER( regex(str(?s),"/ins|/org") )  }
+  union
+  { ?s a foaf:Person . ?s ?p ?o . FILTER( regex(str(?p),"hasPrincipalInvestigatorRole")) }
+  union
+  { ?s a foaf:Person . ?s ?p ?o . FILTER( regex(str(?p),"trainingAtOrganization")) }
+  union
+  { ?s a foaf:Person . ?s ?p ?o . FILTER( regex(str(?p),"hasTeacherRole")) }
+  union
+  { ?s a foaf:Person . ?s ?p ?o . FILTER( regex(str(?p),"educationalTraining")) }
+  union
+  { ?s a foaf:Person . ?s ?p ?o . ?o a core:Address }
+  union
+  { ?s a foaf:Person . ?s ?p ?o . FILTER( regex(str(?p),"personInPosition")) }
+}

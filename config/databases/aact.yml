@@ -1,0 +1,22 @@
+default: &default
+  encoding: utf8
+  adapter: postgresql
+  min_messages: warning
+  pool: <%= [Integer(ENV.fetch("MAX_THREADS", 5)), Integer(ENV.fetch("DB_POOL", 5))].max %>
+  timeout: 5000
+  url:  <%= ENV.fetch("AACT_READONLY_DATABASE_URL", "") %>
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+  url:  <%= ENV.fetch("AACT_READONLY_DATABASE_URL", "") %>
+
+public:
+  <<: *default
+  url:  <%= ENV.fetch("AACT_READONLY_DATABASE_URL", "") %>
+

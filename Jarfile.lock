@@ -1,0 +1,7 @@
+---
+:runtime:
+- org.bouncycastle:bcprov-jdk15on:jar:1.59
+- org.yaml:snakeyaml:jar:1.18
+- jline:jline:jar:2.11
+- org.bouncycastle:bctls-jdk15on:jar:1.59
+- org.bouncycastle:bcpkix-jdk15on:jar:1.59

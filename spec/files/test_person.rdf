@@ -1,0 +1,59 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:bibo="http://purl.org/ontology/bibo/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:core="http://vivoweb.org/ontology/core#"
+    xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://vivoweb.org/ontology/core#yearPrecision">
+    <rdfs:label xml:lang="en-US">yearPrecision</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://vivo-dev.oit.duke.edu/individual/n2754">
+    <vitro:mostSpecificType rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://vivoweb.org/ontology/core#DateTimeInterval"/>
+    <core:start rdf:resource="https://vivo-dev.oit.duke.edu/individual/n2741"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://vivo-dev.oit.duke.edu/individual/n2776">
+    <core:positionInOrganization rdf:resource="https://vivo-dev.oit.duke.edu/individual/n2742"/>
+    <vitro:mostSpecificType rdf:resource="http://vivoweb.org/ontology/core#FacultyPosition"/>
+    <core:dateTimeInterval rdf:resource="https://vivo-dev.oit.duke.edu/individual/n2754"/>
+    <rdf:type rdf:resource="http://vivoweb.org/ontology/core#FacultyPosition"/>
+    <rdfs:label xml:lang="en-US">Professor</rdfs:label>
+    <core:hrJobTitle>Professor IV</core:hrJobTitle>
+    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-09-21T16:28:46</vitro:modTime>
+    <core:positionForPerson rdf:resource="https://vivo-dev.oit.duke.edu/individual/n8014"/>
+    <rdf:type rdf:resource="http://vivoweb.org/ontology/core#DependentResource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#DependentResource"/>
+    <rdf:type rdf:resource="http://vivoweb.org/ontology/core#Position"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://vivo-dev.oit.duke.edu/individual/n2741">
+    <vitro:mostSpecificType rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://vivoweb.org/ontology/core#DateTimeValue"/>
+    <core:dateTimePrecision rdf:resource="http://vivoweb.org/ontology/core#yearPrecision"/>
+    <core:dateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-01-01T00:00:00</core:dateTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://vivo-dev.oit.duke.edu/individual/n2742">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Testology</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://vivo-dev.oit.duke.edu/individual/n8014">
+    <vitro:modTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-09-21T15:53:33</vitro:modTime>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <foaf:firstName>Test</foaf:firstName>
+    <core:phoneNumber>555-555-1212</core:phoneNumber>
+    <rdfs:label xml:lang="en-US">Person, Test</rdfs:label>
+    <rdf:type rdf:resource="http://vivoweb.org/ontology/core#FacultyMember"/>
+    <bibo:suffixName>III</bibo:suffixName>
+    <bibo:prefixName>Dr.</bibo:prefixName>
+    <core:personInPosition rdf:resource="https://vivo-dev.oit.duke.edu/individual/n2776"/>
+    <foaf:lastName>Person</foaf:lastName>
+    <core:primaryEmail>test.person@test.edu</core:primaryEmail>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <core:preferredTitle>Professor of Testology</core:preferredTitle>
+    <vitro:mostSpecificType rdf:resource="http://vivoweb.org/ontology/core#FacultyMember"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+</rdf:RDF>

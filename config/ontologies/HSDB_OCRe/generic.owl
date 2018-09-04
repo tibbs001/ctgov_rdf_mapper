@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY generic "http://purl.org/net/OCRe/generic.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY study_protocol2 "http://purl.org/net/OCRe/study_protocol#" >
+    <!ENTITY statistics "http://purl.org/net/OCRe/statistics.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY study_protocol "http://purl.org/net/OCRe/study_protocol.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.org/net/OCRe/generic.owl#"
+     xml:base="http://purl.org/net/OCRe/generic.owl"
+     xmlns:generic="http://purl.org/net/OCRe/generic.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:study_protocol2="http://purl.org/net/OCRe/study_protocol#"
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#">
+    <owl:Ontology rdf:about="http://purl.org/net/OCRe/generic.owl">
+        <owl:imports rdf:resource="&obo;iao/dev/ontology-metadata.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&statistics;definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/OCRe/generic.owl#OCRE794000 -->
+
+    <owl:ObjectProperty rdf:about="&generic;OCRE794000">
+        <rdfs:label rdf:datatype="&xsd;string">is structurally related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol#OCRE885707 -->
+
+    <owl:ObjectProperty rdf:about="&study_protocol2;OCRE885707">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">is divided into</rdfs:label>
+        <statistics:definition rdf:datatype="&xsd;string">This is a relationship between two acts. This relationship asserts that an epoch must be a division of one and only one study protocol. This relationship also asserts that a study protocol must be divided into one or more epochs.</statistics:definition>
+        <rdfs:subPropertyOf rdf:resource="&generic;OCRE794000"/>
+        <owl:inverseOf rdf:resource="&study_protocol2;OCRE891072"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol#OCRE891072 -->
+
+    <owl:ObjectProperty rdf:about="&study_protocol2;OCRE891072">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">is a division of</rdfs:label>
+        <statistics:definition rdf:datatype="&xsd;string">This is a relationship between two acts. This relationship asserts that an epoch must be a division of one and only one study protocol. This relationship also asserts that a study protocol must be divided into one or more epochs.</statistics:definition>
+        <rdfs:subPropertyOf rdf:resource="&generic;OCRE794000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE818327 -->
+
+    <owl:ObjectProperty rdf:about="&study_protocol;OCRE818327">
+        <rdfs:label rdf:datatype="&xsd;string">composite</rdfs:label>
+        <obo:IAO_0000115>The &quot;composite&quot; entity in a reified decomposition relationship. The reified decomposition relationship links a &quot;component&quot; entity to the composite entity.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&generic;OCRE794000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE850272 -->
+
+    <owl:ObjectProperty rdf:about="&study_protocol;OCRE850272">
+        <rdfs:label rdf:datatype="&xsd;string">occurs in</rdfs:label>
+        <owl:inverseOf rdf:resource="&study_protocol;OCRE861346"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE859340 -->
+
+    <owl:ObjectProperty rdf:about="&study_protocol;OCRE859340">
+        <rdfs:label rdf:datatype="&xsd;string">component</rdfs:label>
+        <obo:IAO_0000115>The &quot;component&quot; entity in a reified decomposition relationship. The reified decomposition relationship links a component entity to the &quot;composite&quot; entity.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&generic;OCRE794000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE861346 -->
+
+    <owl:ObjectProperty rdf:about="&study_protocol;OCRE861346">
+        <rdfs:label rdf:datatype="&xsd;string">contains</rdfs:label>
+        <obo:IAO_0000115>To hold a discrete entity within</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&generic;OCRE794000"/>
+    </owl:ObjectProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
+

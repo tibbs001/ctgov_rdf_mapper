@@ -1,0 +1,104 @@
+  development:
+      namespace: https://scholars.duke.edu/individual/
+      destination_model_name: http://vitro.mannlib.cornell.edu/default/vitro-kb-2
+      inference_model_name: http://vitro.mannlib.cornell.edu/default/vitro-kb-inf
+      user_model_name:  http://vitro.mannlib.cornell.edu/default/vitro-kb-userAccounts
+      incoming:
+        adapter: jdbch2
+        driver: org.h2.Driver
+        sdb: jdbc:h2:dev_incoming
+        username: sa
+        password: 
+        db_type: H2
+        db_layout: layout2/hash
+      staging:
+        adapter: jdbch2
+        driver: org.h2.Driver
+        sdb:  jdbc:h2:dev_staging
+        username: sa
+        password: 
+        db_type: H2
+        db_layout: layout2/hash
+      archive:
+        adapter: jdbch2
+        driver: org.h2.Driver
+        sdb:  jdbc:h2:dev_archive
+        username: sa
+        password: 
+        db_type: H2
+        db_layout: layout2/hash
+      destination:
+        driver: com.mysql.jdbc.Driver
+        sdb: jdbc:mysql://localhost/dev_vivo
+        username: vivodev
+        password: local_vivo_work
+        db_type: MySQL
+        db_layout: layout2/hash
+
+  test:
+      namespace: https://scholars.duke.edu/individual/
+      destination_model_name: http://vitro.mannlib.cornell.edu/default/vitro-kb-2
+      inference_model_name: http://vitro.mannlib.cornell.edu/default/vitro-kb-inf
+      user_model_name:  http://vitro.mannlib.cornell.edu/default/vitro-kb-userAccounts
+      incoming:
+        sdb: jdbc:h2:test_incoming
+        username: sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      staging:
+        sdb:  jdbc:h2:test_staging
+        username: sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      archive:
+        sdb:  jdbc:h2:test_archive
+        username: sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      destination:
+        driver: com.mysql.jdbc.Driver
+        sdb: jdbc:mysql://localhost/test_vivo
+        username: vivotest
+        password: local_vivo_work
+        db_type: MySQL
+        db_layout: layout2/hash
+
+  production:
+      namespace: https://scholars.duke.edu/individual/
+      destination_model_name: http://vitro.mannlib.cornell.edu/default/vitro-kb-2
+      inference_model_name: http://vitro.mannlib.cornell.edu/default/vitro-kb-inf
+      user_model_name:  http://vitro.mannlib.cornell.edu/default/vitro-kb-userAccounts
+      incoming:
+        sdb: jdbc:h2:incoming
+        username: sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      staging:
+        sdb:  jdbc:h2:staging
+        username: sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      archive:
+        sdb:  jdbc:h2:archive
+        username: sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      destination:
+        driver: com.mysql.jdbc.Driver
+        sdb: jdbc:mysql://localhost/vivo
+        username: vivo
+        password: local_vivo_work
+        db_type: MySQL
+        db_layout: layout2/hash

@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:dctype="http://purl.org/dc/dcmitype/Image"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:snomed_interface="http://purl.org/net/OCRe/snomed_interface#"
+    xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+    xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://purl.org/net/OCRe/snomed_interface.owl#"
+    xmlns:OCRe="http://purl.org/net/OCRe/OCRe.owl#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://purl.org/net/OCRe/snomed_interface.owl">
+  <owl:Ontology rdf:about="">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A terminology interface module that specifies those SNOMEC CT terms used in annotating specific studies</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#stroke">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#disease"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#creatinine_measurement_serum">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#laboratory_procedure"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/OCRe.owl#OCRE400002"/>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#hypotensive_agent">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#pharmaceutical_biologic_product"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#diabetes_mellitus">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#disease"/>
+    </rdfs:subClassOf>
+    <OCRe:has_code>
+      <owl:NamedIndividual rdf:about="http://purl.org/net/OCRe/snomed_interface#diabetes_mellitus_code">
+        <rdf:type>
+          <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+        </rdf:type>
+        <rdf:type>
+          <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code"/>
+        </rdf:type>
+        <rdf:type>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/snomed_interface#diabetes_mellitus"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="http://purl.org/net/OCRe/OCRe.owl#OCRE900061"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </rdf:type>
+      </owl:NamedIndividual>
+    </OCRe:has_code>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#unit">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#qualifier_value"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#myocardial_infarction">
+    <OCRe:has_code>
+      <owl:NamedIndividual rdf:about="http://purl.org/net/OCRe/snomed_interface#myocardial_infarction_code">
+        <OCRe:preferred_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >myocardial infarction</OCRe:preferred_name>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdf:type>
+          <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code"/>
+        </rdf:type>
+        <rdf:type>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://purl.org/net/OCRe/OCRe.owl#OCRE900061"/>
+            <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/snomed_interface#myocardial_infarction"/>
+          </owl:Restriction>
+        </rdf:type>
+        <OCRe:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >22298006</OCRe:code>
+      </owl:NamedIndividual>
+    </OCRe:has_code>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#disease"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#beta-Blocking_agent">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#hypotensive_agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#SNOMED_CT_term">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/OCRe.owl#OCRE400002"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#therapeutic_procedure">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#procedure"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#event">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMED_CT_term"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#Angiotensin_II_receptor_antagonist">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#hypotensive_agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#laboratory_procedure">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#procedure"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#Angiotensin-converting_enzyme_inhibitor_agent">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#hypotensive_agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#procedure">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMED_CT_term"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#Calcium_channel_blocker">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#hypotensive_agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#Diuretic">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#hypotensive_agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#pharmaceutical_biologic_product">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMED_CT_term"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#percutaneous_coronary_intervention">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#therapeutic_procedure"/>
+  </owl:Class>
+  <owl:Class rdf:ID="heparin_therapy">
+    <statistics:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Therapeutic treatment with heparin</statistics:definition>
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#therapeutic_procedure"/>
+    <statistics:curator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simona</statistics:curator>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#death">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#event"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#qualifier_value">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMED_CT_term"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >SNOMEDCT</owl:hasValue>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://purl.org/net/OCRe/OCRe.owl#coding_system_name"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#thrombolytic_therapy">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#therapeutic_procedure"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#disease">
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMED_CT_term"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/net/OCRe/snomed_interface#acute_myocardial_infarctiion">
+    <OCRe:has_code>
+      <owl:NamedIndividual rdf:about="http://purl.org/net/OCRe/snomed_interface#acute_myocardial_infarction_code">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdf:type rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code"/>
+        <rdf:type>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/snomed_interface#acute_myocardial_infarctiion"/>
+            <owl:onProperty rdf:resource="http://purl.org/net/OCRe/OCRe.owl#OCRE900061"/>
+          </owl:Restriction>
+        </rdf:type>
+        <OCRe:preferred_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Acute myocardia infarction</OCRe:preferred_name>
+        <OCRe:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >57054005</OCRe:code>
+      </owl:NamedIndividual>
+    </OCRe:has_code>
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/snomed_interface#myocardial_infarction"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://purl.org/net/OCRe/OCRe.owl#preferred_name"/>
+  <owl:DatatypeProperty rdf:about="http://purl.org/net/OCRe/OCRe.owl#code"/>
+  <owl:NamedIndividual rdf:about="http://purl.org/net/OCRe/snomed_interface#percutaneous_coronary_procedure_code">
+    <OCRe:preferred_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Percutaneous coronary intervention</OCRe:preferred_name>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code"/>
+    <rdf:type>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/snomed_interface#percutaneous_coronary_intervention"/>
+        <owl:onProperty rdf:resource="http://purl.org/net/OCRe/OCRe.owl#OCRE900061"/>
+      </owl:Restriction>
+    </rdf:type>
+    <OCRe:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >415070008</OCRe:code>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://purl.org/net/OCRe/snomed_interface#death_code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code"/>
+    <rdf:type>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/net/OCRe/OCRe.owl#OCRE900061"/>
+        <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/snomed_interface#death"/>
+      </owl:Restriction>
+    </rdf:type>
+    <OCRe:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >419620001</OCRe:code>
+    <OCRe:preferred_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >death</OCRe:preferred_name>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:ID="heparin_therapy_code">
+    <OCRe:preferred_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Heparin therapy</OCRe:preferred_name>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code"/>
+    <rdf:type>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#heparin_therapy"/>
+        <owl:onProperty rdf:resource="http://purl.org/net/OCRe/OCRe.owl#OCRE900061"/>
+      </owl:Restriction>
+    </rdf:type>
+    <OCRe:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >103746007</OCRe:code>
+  </owl:NamedIndividual>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/statistics.owl#curator"/>
+  <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/OCRe.owl#has_code"/>
+  <owl:NamedIndividual rdf:about="http://purl.org/net/OCRe/snomed_interface#laboratory_procedure_code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code"/>
+    <rdf:type>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/net/OCRe/OCRe.owl#OCRE900061"/>
+        <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/snomed_interface#laboratory_procedure"/>
+      </owl:Restriction>
+    </rdf:type>
+    <OCRe:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >108252007</OCRe:code>
+  </owl:NamedIndividual>
+  <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/statistics.owl#definition"/>
+  <owl:NamedIndividual rdf:about="http://purl.org/net/OCRe/snomed_interface#thrombolytic_therapy_code">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code"/>
+    <rdf:type>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/snomed_interface#thrombolytic_therapy"/>
+        <owl:onProperty rdf:resource="http://purl.org/net/OCRe/OCRe.owl#OCRE900061"/>
+      </owl:Restriction>
+    </rdf:type>
+    <OCRe:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >426347000</OCRe:code>
+    <OCRe:preferred_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Thrombolytic therapy</OCRe:preferred_name>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://purl.org/net/OCRe/snomed_interface#creatinine_measurement_serum_code">
+    <OCRe:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >113075003</OCRe:code>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code"/>
+    <rdf:type>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.org/net/OCRe/OCRe.owl#OCRE900061"/>
+        <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/snomed_interface#creatinine_measurement_serum"/>
+      </owl:Restriction>
+    </rdf:type>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://purl.org/net/OCRe/snomed_interface#event_code">
+    <OCRe:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >272379006</OCRe:code>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code"/>
+    <rdf:type>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/snomed_interface#event"/>
+        <owl:onProperty rdf:resource="http://purl.org/net/OCRe/OCRe.owl#OCRE900061"/>
+      </owl:Restriction>
+    </rdf:type>
+    <OCRe:preferred_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >event</OCRe:preferred_name>
+  </owl:NamedIndividual>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <owl:NamedIndividual rdf:about="http://purl.org/net/OCRe/snomed_interface#stroke_code">
+        <OCRe:preferred_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >stroke</OCRe:preferred_name>
+        <OCRe:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >230690007</OCRe:code>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdf:type rdf:resource="http://purl.org/net/OCRe/snomed_interface#SNOMEDCT_code"/>
+        <rdf:type>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/snomed_interface#stroke"/>
+            <owl:onProperty rdf:resource="http://purl.org/net/OCRe/OCRe.owl#OCRE900061"/>
+          </owl:Restriction>
+        </rdf:type>
+      </owl:NamedIndividual>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.6, Build 613)  http://protege.stanford.edu -->

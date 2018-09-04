@@ -1,0 +1,1021 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY OCRe "http://purl.org/net/OCRe/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY ocre "http://purl.org/net/OCRe/OCRe.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY OCRe_ext "http://purl.org/net/OCRe/OCRe_ext.owl#" >
+    <!ENTITY study_design "http://purl.org/net/OCRe/study_design.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY p2 "http://purl.org/net/OCRe/study_protocol.owl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+    <!ENTITY swrla "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#" >
+    <!ENTITY export_annotations_def "http://purl.org/net/OCRe/export_annotations_def.owl#" >
+    <!ENTITY sqwrl "http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#" >
+]>
+
+
+<rdf:RDF xmlns="&OCRe;HSDB_OCRe.owl#"
+     xml:base="&OCRe;HSDB_OCRe.owl"
+     xmlns:OCRe_ext="&OCRe;OCRe_ext.owl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:p2="&OCRe;study_protocol.owl#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:OCRe="http://purl.org/net/OCRe/"
+     xmlns:sqwrl="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#"
+     xmlns:ocre="&OCRe;OCRe.owl#"
+     xmlns:study_design="&OCRe;study_design.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:export_annotations_def="&OCRe;export_annotations_def.owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="&OCRe;HSDB_OCRe.owl">
+        <owl:versionInfo rdf:datatype="&xsd;string">Revision 290</owl:versionInfo>
+        <owl:imports rdf:resource="&OCRe;OCRe_ext.owl"/>
+        <owl:imports rdf:resource="&OCRe;export_annotations_def.owl"/>
+        <export_annotations_def:OCRE000003 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE000002"/>
+        <export_annotations_def:OCRE529769 rdf:resource="&OCRe;OCRe_ext.owl#OCRE551759"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&OCRe;HSDB_OCRe.owl#OCRE875514">
+        <rdfs:label>has subclass</rdfs:label>
+        <rdfs:comment>The annotation that specifies which of the subclasses of a class should have derived complex types</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/OCRe/HSDB_OCRe.owl#OCRE000040 -->
+
+    <owl:ObjectProperty rdf:about="&OCRe;HSDB_OCRe.owl#OCRE000040">
+        <rdfs:label xml:lang="en">has study annotation</rdfs:label>
+        <export_annotations_def:OCRE000041>anno:StudyAnnotationType</export_annotations_def:OCRE000041>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/HSDB_OCRe.owl#OCRE5000009 -->
+
+    <owl:ObjectProperty rdf:about="&OCRe;HSDB_OCRe.owl#OCRE5000009">
+        <rdfs:label rdf:datatype="&xsd;string">has study</rdfs:label>
+        <rdfs:range rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/HSDB_OCRe.owl#OCRE5000014 -->
+
+    <owl:ObjectProperty rdf:about="&OCRe;HSDB_OCRe.owl#OCRE5000014">
+        <rdfs:label rdf:datatype="&xsd;string">has schema parent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/HSDB_OCRe.owl#OCRE5000020 -->
+
+    <owl:ObjectProperty rdf:about="&OCRe;HSDB_OCRe.owl#OCRE5000020">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE820850 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE820850">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE837311 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE837311">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900089 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900089">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900098 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900098">
+        <rdfs:range rdf:resource="&OCRe;OCRe.owl#OCRE400050"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE827668 -->
+
+    <rdf:Description rdf:about="&OCRe;study_protocol.owl#OCRE827668">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE744000 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE744000">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE885000 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE885000">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900209 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900209">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <export_annotations_def:OCRE580987 rdf:datatype="&xsd;string">address</export_annotations_def:OCRE580987>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900210 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900210">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900211 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900211">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900212 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900212">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900213 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900213">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900224 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900224">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900225 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900225">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900226 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900226">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900239 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900239">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900240 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900240">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE900241 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900241">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE400010 -->
+
+    <owl:Class rdf:about="&OCRe;OCRe.owl#OCRE400010"/>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE400014 -->
+
+    <owl:Class rdf:about="&OCRe;OCRe.owl#OCRE400014">
+        <export_annotations_def:OCRE511666 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE521226"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE901008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE400029 -->
+
+    <owl:Class rdf:about="&OCRe;OCRe.owl#OCRE400029">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE000040"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE282000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE358000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE529106"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE535519"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE574000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE693000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE721000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE738000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE741000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE820850"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE837311"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE837984"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE890531"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900089"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900200"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900203"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900213"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900214"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE901004"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE901005"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE901006"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE901007"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE913000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe_ext.owl#OCRE900314"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe_ext.owl#OCRE900319"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_design.owl#OCRE900003"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_design.owl#OCRE900005"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_design.owl#OCRE900006"/>
+    </owl:Class>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">16</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE901006"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">17</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE901004"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">7</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE901007"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">14</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900200"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">6</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE890531"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">10</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE837311"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">12</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE738000"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">9</export_annotations_def:OCRE863610>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE358000"/>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">5</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe_ext.owl#OCRE900314"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">2</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900213"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">18</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe_ext.owl#OCRE900319"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">19</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900214"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">11</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE837984"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">15</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900089"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">8</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE820850"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">4</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE529106"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE901005"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">13</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900203"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">3</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400029"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE535519"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE400039 -->
+
+    <owl:Class rdf:about="&OCRe;OCRe.owl#OCRE400039">
+        <export_annotations_def:OCRE511666 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE521226"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE744000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE885000"/>
+    </owl:Class>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">2</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400039"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE744000"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400039"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE885000"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE400040 -->
+
+    <owl:Class rdf:about="&OCRe;OCRe.owl#OCRE400040">
+        <OCRE875514 rdf:resource="&OCRe;OCRe.owl#OCRE400014"/>
+        <OCRE875514 rdf:resource="&OCRe;OCRe.owl#OCRE400039"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900209"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE400050 -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400050">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE747000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900082"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900088"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900091"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900224"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_design.owl#OCRE100056 -->
+
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100056">
+        <rdfs:subClassOf rdf:resource="&OCRe;OCRe.owl#OCRE400010"/>
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/OCRe/HSDB_OCRe.owl -->
+
+    <owl:NamedIndividual rdf:about="&OCRe;HSDB_OCRe.owl">
+        <export_annotations_def:OCRE000020>AnnotationImport.xsd</export_annotations_def:OCRE000020>
+        <export_annotations_def:OCRE000019>http://purl.org/NET/OCRe/anno</export_annotations_def:OCRE000019>
+        <export_annotations_def:OCRE000021>anno</export_annotations_def:OCRE000021>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/OCRe/HSDB_OCRe.owl#OCRE000002 -->
+
+    <owl:NamedIndividual rdf:about="&OCRe;HSDB_OCRe.owl#OCRE000002">
+        <rdf:type rdf:resource="&OCRe;export_annotations_def.owl#OCRE000001"/>
+        <rdfs:label>Annotation xsd import specification</rdfs:label>
+        <export_annotations_def:OCRE000020>AnnotationImport.xsd</export_annotations_def:OCRE000020>
+        <export_annotations_def:OCRE000019>http://purl.org/NET/OCRe/anno</export_annotations_def:OCRE000019>
+        <export_annotations_def:OCRE000021>anno</export_annotations_def:OCRE000021>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/OCRe/HSDB_OCRe.owl#OCRE000010 -->
+
+    <owl:NamedIndividual rdf:about="&OCRe;HSDB_OCRe.owl#OCRE000010">
+        <rdf:type rdf:resource="&OCRe;export_annotations_def.owl#OCRE674561"/>
+        <rdfs:label xml:lang="en">id reference attribute</rdfs:label>
+        <export_annotations_def:OCRE253353 rdf:datatype="&xsd;string">ref</export_annotations_def:OCRE253353>
+        <export_annotations_def:OCRE956877 rdf:datatype="&xsd;string">xsd:IDREF</export_annotations_def:OCRE956877>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/OCRe/HSDB_OCRe.owl#OCRE000011 -->
+
+    <owl:NamedIndividual rdf:about="&OCRe;HSDB_OCRe.owl#OCRE000011">
+        <rdf:type rdf:resource="&OCRe;export_annotations_def.owl#OCRE674561"/>
+        <rdfs:label xml:lang="en">id attribute</rdfs:label>
+        <export_annotations_def:OCRE253353 rdf:datatype="&xsd;string">id</export_annotations_def:OCRE253353>
+        <export_annotations_def:OCRE956877 rdf:datatype="&xsd;string">xsd:ID</export_annotations_def:OCRE956877>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/OCRe/HSDB_OCRe.owl#OCRE517890 -->
+
+    <owl:NamedIndividual rdf:about="&OCRe;HSDB_OCRe.owl#OCRE517890">
+        <rdfs:label rdf:datatype="&xsd;string">restriction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/net/OCRe/HSDB_OCRe.owl#OCRE521226 -->
+
+    <owl:NamedIndividual rdf:about="&OCRe;HSDB_OCRe.owl#OCRE521226">
+        <rdfs:label rdf:datatype="&xsd;string">extension</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400005">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE877903"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE182000">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE886865"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe_ext.owl#OCRE534000">
+        <export_annotations_def:OCRE511666 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE521226"/>
+        <export_annotations_def:OCRE566765 rdf:resource="&OCRe;OCRe_ext.owl#OCRE546280"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE581634">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE551318"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE747000"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">2</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE581634"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE747000"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE551318"/>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE581634"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100073">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100022">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100072">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100021">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400013">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE877903"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100028">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe_ext.owl#OCRE511747">
+        <export_annotations_def:OCRE511666 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE517890"/>
+        <export_annotations_def:OCRE566765 rdf:resource="&OCRe;OCRe.owl#OCRE400079"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE50034">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE551318"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE850077"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">2</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE50034"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE850077"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE50034"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE551318"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400055">
+        <export_annotations_def:OCRE566765 rdf:resource="&OCRe;OCRe.owl#OCRE400078"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900219"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900220"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900221"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900222"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">3</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400055"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900220"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">4</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400055"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900221"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400055"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900222"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">2</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400055"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900219"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="&obo;IAO_0000111">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe_ext.owl#OCRE571000">
+        <export_annotations_def:OCRE511666 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE521226"/>
+        <export_annotations_def:OCRE566765 rdf:resource="&OCRe;OCRe_ext.owl#OCRE546280"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000112">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000589">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000115">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000117">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE850429">
+        <OCRE875514 rdf:resource="&OCRe;OCRe.owl#OCRE182000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE747000"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900224"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000116">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE826429">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_protocol#OCRE885707"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE886865">
+        <export_annotations_def:OCRE842711 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE000010"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_protocol.owl#OCRE300011">
+        <export_annotations_def:OCRE842711 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE000011"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900082"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900224"/>
+        <OCRE875514 rdf:resource="&OCRe;study_protocol.owl#OCRE300004"/>
+        <OCRE875514 rdf:resource="&OCRe;study_protocol.owl#OCRE300008"/>
+        <OCRE875514 rdf:resource="&OCRe;study_protocol.owl#OCRE300009"/>
+        <OCRE875514 rdf:resource="&OCRe;study_protocol.owl#OCRE300015"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_protocol.owl#OCRE827668"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">3</export_annotations_def:OCRE863610>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+        <owl:annotatedSource rdf:resource="&OCRe;study_protocol.owl#OCRE300011"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;study_protocol.owl#OCRE827668"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">2</export_annotations_def:OCRE863610>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900082"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+        <owl:annotatedSource rdf:resource="&OCRe;study_protocol.owl#OCRE300011"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900224"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+        <owl:annotatedSource rdf:resource="&OCRe;study_protocol.owl#OCRE300011"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="&OCRe;study_protocol.owl#OCRE300010">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_protocol.owl#OCRE818327"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_protocol.owl#OCRE843670"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_protocol.owl#OCRE859340"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_protocol.owl#OCRE300012">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE899177"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900056"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900098"/>
+        <OCRE875514 rdf:resource="&OCRe;study_protocol.owl#OCRE892807"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">2</export_annotations_def:OCRE863610>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900056"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+        <owl:annotatedSource rdf:resource="&OCRe;study_protocol.owl#OCRE300012"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900098"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+        <owl:annotatedSource rdf:resource="&OCRe;study_protocol.owl#OCRE300012"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100060">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400003">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100038">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400080">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000412">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400001">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900239"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900241"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">2</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400001"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900241"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400001"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900239"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400043">
+        <export_annotations_def:OCRE566765 rdf:resource="&OCRe;OCRe_ext.owl#OCRE598730"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400041">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE140896"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900223"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900224"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_protocol.owl#OCRE827668"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe_ext.owl#OCRE598434">
+        <export_annotations_def:OCRE511666 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE517890"/>
+        <export_annotations_def:OCRE566765 rdf:resource="&OCRe;OCRe.owl#OCRE400079"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_protocol.owl#OCRE892807">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_protocol#OCRE885707"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe_ext.owl#OCRE000018">
+        <OCRE875514 rdf:resource="&OCRe;study_protocol.owl#OCRE300000"/>
+        <OCRE875514 rdf:resource="&OCRe;study_protocol.owl#OCRE300001"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100058">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100059">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100003">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe_ext.owl#OCRE534515">
+        <export_annotations_def:OCRE511666 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE517890"/>
+        <export_annotations_def:OCRE566765 rdf:resource="&OCRe;OCRe.owl#OCRE400079"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe_ext.owl#OCRE546280">
+        <OCRE875514 rdf:resource="&OCRe;OCRe.owl#OCRE400076"/>
+        <OCRE875514 rdf:resource="&OCRe;OCRe.owl#OCRE400079"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE364000">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE877903"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100000">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100051">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_protocol.owl#OCRE300001">
+        <export_annotations_def:OCRE842711 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE000011"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900224"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_protocol.owl#OCRE861346"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900224"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+        <owl:annotatedSource rdf:resource="&OCRe;study_protocol.owl#OCRE300001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">2</export_annotations_def:OCRE863610>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+        <owl:annotatedSource rdf:resource="&OCRe;study_protocol.owl#OCRE300001"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;study_protocol.owl#OCRE861346"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="&obo;IAO_0000119">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100002">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_protocol.owl#OCRE300000">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900224"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;study_protocol.owl#OCRE843670"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">2</export_annotations_def:OCRE863610>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+        <owl:annotatedSource rdf:resource="&OCRe;study_protocol.owl#OCRE300000"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;study_protocol.owl#OCRE843670"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900224"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+        <owl:annotatedSource rdf:resource="&OCRe;study_protocol.owl#OCRE300000"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="&OCRe;OCRe_ext.owl#OCRE598730">
+        <export_annotations_def:OCRE511666 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE517890"/>
+        <export_annotations_def:OCRE566765 rdf:resource="&OCRe;OCRe.owl#OCRE541581"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000118">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400078">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900223"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400078"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900223"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE900088">
+        <export_annotations_def:OCRE842711 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE000011"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400079">
+        <export_annotations_def:OCRE511666 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE521226"/>
+        <export_annotations_def:OCRE566765 rdf:resource="&OCRe;OCRe.owl#OCRE541581"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900224"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE901003"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE901005"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">2</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400079"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE901005"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">1</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400079"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900224"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">3</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400079"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE901003"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400074">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE820798"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_protocol.owl#OCRE300009">
+        <OCRE875514 rdf:resource="&OCRe;study_protocol.owl#OCRE300006"/>
+        <OCRE875514 rdf:resource="&OCRe;study_protocol.owl#OCRE817858"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400076">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900064"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900225"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900226"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE901003"/>
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE901005"/>
+    </rdf:Description>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">5</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400076"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900064"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610>1</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400076"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900225"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;int">2</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400076"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE900226"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">3</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400076"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE901005"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <export_annotations_def:OCRE863610 rdf:datatype="&xsd;integer">4</export_annotations_def:OCRE863610>
+        <owl:annotatedSource rdf:resource="&OCRe;OCRe.owl#OCRE400076"/>
+        <owl:annotatedTarget rdf:resource="&OCRe;OCRe.owl#OCRE901003"/>
+        <owl:annotatedProperty rdf:resource="&OCRe;export_annotations_def.owl#OCRE520413"/>
+    </owl:Axiom>
+    <rdf:Description rdf:about="&obo;IAO_0000225">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100045">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100049">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe_ext.owl#OCRE560892">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE901003"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0100001">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe_ext.owl#OCRE500000">
+        <export_annotations_def:OCRE511666 rdf:resource="&OCRe;HSDB_OCRe.owl#OCRE517890"/>
+        <export_annotations_def:OCRE566765 rdf:resource="&OCRe;OCRe.owl#OCRE400079"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400024">
+        <export_annotations_def:OCRE520413 rdf:resource="&OCRe;OCRe.owl#OCRE900223"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe_ext.owl#OCRE867266">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE877903"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100042">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100041">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;OCRe.owl#OCRE400020">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000232">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&OCRe;study_design.owl#OCRE100082">
+        <export_annotations_def:OCRE826078 rdf:resource="&OCRe;OCRe_ext.owl#OCRE893499"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000078">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,96 @@
+  development:
+      namespace: http://example.edu
+      destination_model_name: http://vitro.mannlib.cornell.edu/default/vitro-kb-2
+      incoming:
+        sdb: jdbc:h2:dev_incoming
+        username: sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      staging:
+        sdb:  jdbc:h2:dev_staging
+        username: sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      archive:
+        sdb:  jdbc:h2:dev_archive
+        username: sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      destination:
+        sdb:  jdbc:h2:dev_destination
+        username: sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+
+  test:
+      namespace: http://test-example.edu
+      destination_model_name: http://test
+      incoming:
+        sdb: jdbc:h2:test_incoming
+        username: test-sa
+        password: test-password
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      staging:
+        sdb:  jdbc:h2:test_staging
+        username: test-sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      archive:
+        sdb:  jdbc:h2:test_archive
+        username: test-sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      destination:
+        sdb:  jdbc:h2:test_destination
+        username: sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+
+  production:
+      namespace: http://prod-example.edu
+      destination_model_name: http://prod
+      incoming:
+        sdb: jdbc:h2:incoming
+        username: prod-sa
+        password: prod-password
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      staging:
+        sdb:  jdbc:h2:staging
+        username: prod-staging
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      archive:
+        sdb:  jdbc:h2:test_archive
+        username: test-sa
+        password: 
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+      destination:
+        sdb:  jdbc:h2:prod_destination
+        username: prod-dest
+        password: prod-vivo
+        driver: org.h2.Driver
+        db_type: H2
+        db_layout: layout2/hash
+

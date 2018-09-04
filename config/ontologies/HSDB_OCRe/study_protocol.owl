@@ -1,0 +1,609 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY dctype "http://purl.org/dc/dcmitype/Image" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY OCRe "http://purl.org/net/OCRe/OCRe.owl#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY OCRe_ext "http://purl.org/net/OCRe/OCRe_ext.owl#" >
+    <!ENTITY study_protocol "http://purl.org/net/OCRe/study_protocol#" >
+    <!ENTITY statistics "http://purl.org/net/OCRe/statistics.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.org/net/OCRe/study_protocol.owl#"
+     xml:base="http://purl.org/net/OCRe/study_protocol.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:OCRe_ext="http://purl.org/net/OCRe/OCRe_ext.owl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:OCRe="http://purl.org/net/OCRe/OCRe.owl#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:dctype="http://purl.org/dc/dcmitype/Image"
+     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.org/net/OCRe/study_protocol.owl">
+        <rdfs:comment rdf:datatype="&xsd;string">Concept imported from BRIDG that related to the defined activities and schedules of a study protocol.</rdfs:comment>
+        <owl:imports rdf:resource="http://purl.org/net/OCRe/generic.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&statistics;definition"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000232">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&statistics;curator"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#develop_comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol#OCRE885707 -->
+
+    <owl:ObjectProperty rdf:about="&study_protocol;OCRE885707"/>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE387041 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE387041">
+        <rdfs:label rdf:datatype="&xsd;string">has intervention</rdfs:label>
+        <obo:IAO_0000115>The relationship between an arm of a study and the specific intervention (whose effects are being evaluated) of the arm</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE861346"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE803152 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE803152">
+        <rdfs:label rdf:datatype="&xsd;string">has dose</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE821578 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE821578">
+        <rdfs:label rdf:datatype="&xsd;string">has daily dose total</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE821724 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE821724">
+        <rdfs:label rdf:datatype="&xsd;string">has dose frequency code</rdfs:label>
+        <rdfs:range rdf:resource="&OCRe;OCRE400078"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE827668 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE827668">
+        <rdfs:label rdf:datatype="&xsd;string">has code</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE838502 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE838502">
+        <rdfs:label rdf:datatype="&xsd;string">has planned composition relationship</rdfs:label>
+        <rdfs:range rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300010"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300011"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE884480 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE884480">
+        <rdfs:label rdf:datatype="&xsd;string">has route of administration</rdfs:label>
+        <rdfs:range rdf:resource="&OCRe;OCRE400055"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE843670 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE843670">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">has sequence number</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300010"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE892702 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE892702">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">has repeat quantity</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300011"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE400055 -->
+
+    <owl:Class rdf:about="&OCRe;OCRE400055"/>
+    
+
+
+    <!-- http://purl.org/net/OCRe/OCRe.owl#OCRE400078 -->
+
+    <owl:Class rdf:about="&OCRe;OCRE400078"/>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE300000 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300000">
+        <rdfs:label rdf:datatype="&xsd;string">Epoch</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&study_protocol;OCRE891072"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE892807"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">BRIDG 3.0.3 Available at http://bridgmodel.nci.nih.gov/</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">DEFINITION:
+One of a set of ordered partitions of an experimental unit&apos;s participation in a study. An Epoch represents a state within a study such that subjects in separate arms within that state are comparable.
+
+Each epoch serves a purpose in the trial as a whole, typically exposing the subject to a treatment or preparing them for a treatment, or gathering post-treatment data.  Activities and activity results control the subject&apos;s movement from one epoch to another.
+
+EXAMPLE(S):
+A study designed to assess the effects of treatments might have 3 epochs.
+A Screening Epoch in which subjects&apos; eligibility is determined and baseline measurements are made.
+A Treatment Epoch during which treatments are given and effects of treatment are assessed.
+A Follow-up Epoch during which post-treatment assessments are conducted.  
+
+NOTE(S):
+A subject moves from one epoch to another and can only be in one epoch at a time. The subject can only move to an epoch with a greater sequenceNumber. Activities in the same epoch but a different arm need not be similar in time and pattern. Subjects in different arms will not necessarily pass through the same epochs.
+</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">DEFINITION:
+One of a set of ordered partitions of an experimental unit&apos;s planned time in a study.  
+
+Each Epoch serves a purpose in the trial as a whole, typically exposing the subject to a treatment or preparing them for a treatment, or gathering post-treatment data.  Epoch-specific (state) transition rules control the subject&apos;s movement from one Epoch to another.
+
+For example, a study designed to assess the effects of treatments might have 3 epochs, a Screening epoch in which subjects&apos; eligibility is determined and baseline measurements are made, a Treatment epoch during which treatments are given and effects of treatment are assessed, and a Follow-up epoch during which post-treatment assessments are conducted.  
+
+NOTE: A subject moves from one Epoch to another and can only be in one epoch at a time. The subject can only move to an Epoch with a greater sequenceNumber. The main purpose of the Epoch is to organize the Arms for comparison purposes. Activities in the same Epoch but a different Arm need not be similar in time and pattern. [BRIDG Release 3]</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Simona</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE300001 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300001">
+        <rdfs:label rdf:datatype="&xsd;string">Arm</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&study_protocol;OCRE891072"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE892807"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">BRIDG 3.0.3 Available at http://bridgmodel.nci.nih.gov/</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">DEFINITION:
+A path through the study which describes what activities the study subject or experimental unit will be involved in as they pass through the study, and is typically equivalent to a treatment group in a parallel design trial. Generally, each subject is assigned to an arm, and the design of the study is reflected in the number and composition of the individual arms. This intended path through which the subject progresses in a trial is composed of time point events for each epoch of the study. Each time point event, in turn, has a pattern of child time points through which the subject would pass. This planned path thus describes how subjects assigned to the arm will be treated. 
+
+EXAMPLE(S):
+A study could have 2 arms named IV-Oral and Oral-IV.  The name IV-Oral reflects a path that passes through IV treatment, then Oral treatment.
+
+OTHER NAME(S):
+Group (CTRR Observational Studies)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Simona</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE300004 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300004">
+        <rdfs:label rdf:datatype="&xsd;string">Planned administrative activity specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300011"/>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Samson Tu</obo:IAO_0000117>
+        <obo:IAO_0000119>Adapted from BRIDG 3.1 definition of DefinedAdministrativeActivity</obo:IAO_0000119>
+        <obo:IAO_0000115>The description of a planned activity that is not directly related to hypothesis evaluation or testing, but is typically essential to the efficient and/or effective coordination and execution of a study, such as obtaining informed consent, verifying eligibility criteria, and completing study visits.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE300006 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300006">
+        <rdfs:label rdf:datatype="&xsd;string">Planned specimen collection specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300009"/>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Samson Tu</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The description of a planned procedure that is an action of gathering samples that may be used for subsequent analysis.</obo:IAO_0000115>
+        <obo:IAO_0000119>Adapted from BRIDG 3.1 definition of DefinedSpecimenCollection</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE300008 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300008">
+        <rdfs:label rdf:datatype="&xsd;string">Planned observation specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300011"/>
+        <owl:disjointWith rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300009"/>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Samson Tu</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The description of a planned activity whose immediate and primary intention is to obtain a result by observing, monitoring, measuring or otherwise qualitatively or quantitatively gathering data or information about some aspect of a subject&apos;s, study subject&apos;s or experimental unit&apos;s state and whose immediate and primary intention is NOT the alteration of the state of the subject, study subject or experimental unit.</obo:IAO_0000115>
+        <obo:IAO_0000119>Adapted from BRIDG 3.1 definition of DefinedObservation.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE300009 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300009">
+        <rdfs:label rdf:datatype="&xsd;string">Planned procedure specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300011"/>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Samson Tu</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The description of a planned activity whose immediate and primary intention is the alteration of the state of the subject, study subject or experimental unit.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE300010 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300010">
+        <rdfs:label rdf:datatype="&xsd;string">Planned activities composition relationship specification</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE818327"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE859340"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">BRIDG 3.0.3 Available at http://bridgmodel.nci.nih.gov/</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">DEFINITION:
+A relationship between a composite activity specification and the component activity specifications  that comprise it, i.e. parent and child activity specifications where all specified activities are intended to occur at some point in the context of a particular study.
+</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Samson Tu</obo:IAO_0000117>
+        <rdfs:comment>cf BRIDG 3.1 DEFINITION of Planned composition relationship
+A relationship between a composite activity and the component activities that comprise it, i.e. parent and child activities where all activities are intended to occur at some point in the context of a particular study.
+
+EXAMPLE(S):
+A battery of tests may be composed of multiple routine labs that are always ordered together as a group. 
+
+A glucose tolerance test which is comprised of administering glucose and taking multiple timed blood samples which are then tested for glucose.
+
+OTHER NAME(S):
+
+NOTE(S):
+This class helps represent an AND relationship between siblings with the same parent activity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE300011 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300011">
+        <rdfs:label rdf:datatype="&xsd;string">Planned activity specification</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE850272"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string">Activity specification can be harmonized to BRIDG 3.1
+&apos;Planned activity,&apos; which is defined as
+
+DEFINITION: An activity that is intended to occur or start at some point in the context of a particular study.   
+
+EXAMPLE(S): 
+Pregnancy tests are planned for study subjects who are females of childbearing potential.   
+
+OTHER NAME(S):  
+
+NOTE(S): 
+A PlannedActivity may be a container of other activities and have a complex structure involving components, options and contingencies using the associated relationship classes. This structure allows the representation of concepts in previous versions of BRIDG such as StudyCells, StudySegments and StudySubjectEncounters.  A PlannedActivity could also be thought of as an activity at a particular stage in the business process in which the activities occur, i.e., in the &quot;planned&quot; stage rather than the &quot;scheduled&quot; stage or the &quot;performed&quot; stage. An instance of a PlannedActivity is not assigned to a particular Subject, StudySubject, or ExperimentalUnit, but to a &quot;kind of&quot; Subject, StudySubject, or ExperimentalUnit. </rdfs:comment>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Modified from BRIDG 3.1; Available at http://bridgmodel.nci.nih.gov/</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Samson Tu</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The description of an activity that is intended to occur or start at some point in the context of a particular study.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE300012 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300012">
+        <rdfs:label rdf:datatype="&xsd;string">Study protocol</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE861346"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A discrete, structured plan (that persists over time) of a formal investigation to assess some outcome phenomena in relation to other study phenomena.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">DEFINITION:
+A discrete, structured plan (that persists over time) of a formal investigation to assess the utility, impact, pharmacological, physiological, and/or psychological effects of a particular treatment, procedure, drug, device, biologic, food product, cosmetic, care plan, or subject characteristic. 
+
+NOTE(S):
+The term &quot;protocol&quot; is somewhat overloaded and must be qualified to provide semantic context.  Therefore the term &quot;study protocol&quot; was chosen to disambiguate it from other protocols. 
+
+In previous versions of BRIDG, there was one class for StudyProtocol.  However this too represented multiple distinct aspects of the semantics of study protocol, each of which have now been split into separate classes:
+- The StudyProtocol class represents the content of the study protocol and can exist even before the information is put into document form. 
+- The details of the structured plan for the study protocol are represented by the StudyProtocolVersion, so named because any aspect of the definition can change from version to version.  These details include, but are not limited to, the characteristics, specifications, objective(s), background, the pre-study/study/post-study portions of the plan (including the design, methodology, statistical considerations, organization).
+- The protocol and its versions can each be represented in document form, respectively StudyProtocolDocument and StudyProtocolDocumentVersion.  A StudyProtocolDocument groups the various document versions (StudyProtocolDocumentVersions).
+- The conduct of a study based on a study protocol definition is represented by the StudyExecution class.
+
+BRIDG 3.0.3 Available at http://bridgmodel.nci.nih.gov/</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">Previous definition: An action plan for a pre-clinical or clinical study which defines all activities planned to achieve the objectives of the study. The plan specifies, for example, the design of the study, including  the subject to be included, the outcome to be studied,  data to be collected, and method of analysis. A study protocol is an informational entity that is ontologically distinct from events that occur as part of the study.
+
+BRIDG Release 2.2 definition: An action plan for a formal investigation to assess the utility, impact, pharmacological, physiological, and psychological effects of a particular treatment, procedure, drug, device, biologic, food product, cosmetic, care plan, or subject characteristic.
+Note: Among other things, the action plan may include the design, statistical considerations and all activities to test a particular hypothesis that is the basis of the study.  The study may be of any type that involves StudySubjects, including prevention, therapeutic, interventional or observational.  Subjects may be biological entities (human, animal, specimen, tissue, organ, etc.) or products.</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Simona</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE300015 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300015">
+        <rdfs:label rdf:datatype="&xsd;string">Planned subject activity group specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300011"/>
+        <rdfs:comment>Cf BRIDG 3.1 PlannedSubjectActivityGroup
+
+DEFINITION:
+A collection of activities that are intended to occur or start for the same study subject at a specific point in the context of a particular study.
+
+EXAMPLE(S):
+Clinic visit during which a physical exam, a blood test, and a substance administration occur
+
+Telephone contact during which temperature, blood pressure and adverse events are reported
+
+Recording multiple observation results in a diary
+
+A treatment strategy that consists of drug administrations with rules for modifying doses
+
+OTHER NAME(S):
+visit, time point, study segment, course, treatment strategy, period, cycle
+
+NOTE(S):</rdfs:comment>
+        <obo:IAO_0000115>The description of a collection of activities that are intended to occur or start for the same study subject at a specific point in the context of a particular study.
+
+EXAMPLE(S):
+Clinic visit during which a physical exam, a blood test, and a substance administration occur
+
+Telephone contact during which temperature, blood pressure and adverse events are reported
+
+Recording multiple observation results in a diary
+
+A treatment strategy that consists of drug administrations with rules for modifying doses
+</obo:IAO_0000115>
+        <obo:IAO_0000119>Adapted from BRIDG 3.1 definition of PlannedSubjectActivityGroup.</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE307000 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE307000">
+        <rdfs:label rdf:datatype="&xsd;string">ExperimentalUnit</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">BRIDG 3.0.3 Available at http://bridgmodel.nci.nih.gov/</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">DEFINITION:
+A physical entity which is the primary unit of interest in a specific research objective. In an interventional study, the experimental unit is assigned to an intervention. The experimental unit is also the unit of primary statistical analysis. Commonly the individual study subject (animal, person or product) is the experimental unit. Different experimental units must be capable of receiving different experimental interventions. 
+
+EXAMPLE(S):
+If all pigs in a pen receive the same intervention in their feed, and the primary observations and analyses of interest are associated with the entire pen (e.g. total feed consumed, total weight of all pigs combined), then the pen of pigs rather than the individual animal is the experimental unit. [CDISC/HL7 Study Participation RMIM, PORT_RM100001UV]
+
+A human StudySubject may have 10 patches of skin each considered an ExperimentalUnit, or a Product StudySubject may have 10 bearings in it, each considered an ExperimentalUnit.  Alternatively, each StudySubject may be an ExperimentalUnit.
+
+OTHER NAME(S):
+
+NOTE(S):
+Depending on the research objectives, a single study may have multiple levels of experimental units, such as whole people and patches of skin.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Simona</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE817858 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE817858">
+        <rdfs:label rdf:datatype="&xsd;string">Planned substance administration specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE884480"/>
+                <owl:allValuesFrom rdf:resource="&OCRe;OCRE400055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE821724"/>
+                <owl:allValuesFrom rdf:resource="&OCRe;OCRE400055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Adapted from BRIDG 3.1 definition of DefinedSubstanceAdministration. Available at http://bridgmodel.nci.nih.gov/</obo:IAO_0000119>
+        <rdfs:comment rdf:datatype="&xsd;string">Cf BRIDG 3.1 DefinedSubstanceAdministration definition
+An activity defined at a global library level that is an action of applying,  introducing or otherwise giving medications or other substances to a subject or experimental unit.
+
+Example: Administration of methotrexate as part of chemotherapy.</rdfs:comment>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Samson Tu</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The description of a planned procedure that is an action of applying, introducing, or otherwise giving medication or other substance to a subject or experimental unit.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/OCRe/study_protocol.owl#OCRE892807 -->
+
+    <owl:Class rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE892807">
+        <rdfs:label>Intervention study protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&study_protocol;OCRE885707"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&study_protocol;OCRE885707"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300000"/>
+                            <rdf:Description rdf:about="http://purl.org/net/OCRe/study_protocol.owl#OCRE300001"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&study_protocol;OCRE885707"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/OCRe/study_protocol.owl#OCRE300000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing">
+        <rdfs:label rdf:datatype="&xsd;string">Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000111">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0100001">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000112">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000589">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000412">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000118">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000078">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000225">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
+

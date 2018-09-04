@@ -1,0 +1,8 @@
+construct {
+  ?s rdfs:label ?l
+}
+where {
+  ?s a foaf:Person .
+  ?s rdfs:label ?l .
+  FILTER(langMatches(lang(?l),"EN"))
+}

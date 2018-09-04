@@ -1,0 +1,2 @@
+#!/bin/sh
+irb -rubygems -I config -r environment.rb
