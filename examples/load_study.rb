@@ -1,4 +1,4 @@
-require 'valium'
+#require 'valium'
 
 config =  VivoMapper::Config.load_from_file('config/sdb.yml')
 im = VivoMapper::ImportManager.new(config)
