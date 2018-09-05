@@ -6,7 +6,6 @@ module VivoMapper
     def initialize(attributes = {})
       [:nct_id, :phase, :brief_title, :description, :enrollment].each do |attr|
         instance_variable_set("@#{attr}", attributes.send(attr.to_sym))
-        #instance_variable_set("@#{attr}",attributes[attr])
       end
       super()
     end

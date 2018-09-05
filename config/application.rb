@@ -34,6 +34,7 @@ Dir.glob("#{MAPPER_ROOT}/app/maps/**/*.rb") {|file| require file}
 
 # wire mappings
 VivoMapper::Study.map_with(StudyMap)
+VivoMapper::Facility.map_with(FacilityMap)
 #VivoMapper::Address.map_with(AddressMap)
 #VivoMapper::Appointment.map_with(AppointmentMap)
 #VivoMapper::Authorship.map_with(AuthorshipMap)
@@ -69,9 +70,7 @@ Dir.glob("#{MAPPER_ROOT}/app/loggers/**/*.rb") {|file| require file}
 #  config_key = File.basename(database_yaml,'.*').to_sym
 #  puts "= config_key: #{config_key}  ============================"
 #  config = YAML.load(File.read(database_yaml))
-#  puts "        00000000000000000000000000"
 #  puts "          #{config[ENV['MAPPER_ENV']]}"
-#  puts "        00000000000000000000000000"
 #  DATABASE_CONFIGS[config_key] = config[ENV['MAPPER_ENV']]
 #end
 #puts "======================================="
