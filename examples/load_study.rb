@@ -5,11 +5,20 @@ im = VivoMapper::ImportManager.new(config)
 im.truncate('staging')
 
 studies = []
-rows = Study.all[0..2]
+rows = Aact::Study.all
 rows.each do |row|
   row.attributes
   studies << VivoMapper::Study.new(row)
 end
 im.simple_import('Study',studies)
+
+facilities = []
+rows = Aact::Facility.all
+rows.each do |row|
+  row.attributes
+  facilities << VivoMapper::Facility.new(row)
+end
+im.simple_import('Facility',facilities)
+
 
 im.export('Study','staging')
