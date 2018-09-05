@@ -4,21 +4,18 @@ default: &default
   min_messages: warning
   pool: <%= [Integer(ENV.fetch("MAX_THREADS", 5)), Integer(ENV.fetch("DB_POOL", 5))].max %>
   timeout: 5000
-  username: <%= ENV.fetch("OT_DB_SUPER_USERNAME", "") %>
-  url:  <%= ENV.fetch("OT_DATABASE_URL", "") %>
+  username: <%= ENV.fetch("QID_LOOKUP_DB_SUPER_USERNAME", "") %>
+  url:  <%= ENV.fetch("QID_LOOKUP_DATABASE_URL", "") %>
 
 development:
   <<: *default
+  url:  <%= ENV.fetch("QID_LOOKUP_DATABASE_URL", "") %>
 
 test:
   <<: *default
-  database: aact_back_test
+  database: ot_test
 
 production:
   <<: *default
-
-aact:
-  <<: *default
-  url:  <%= ENV.fetch("AACT_PUBLIC_DATABASE_URL", "") %>
-
+  url:  <%= ENV.fetch("QID_LOOKUP_DATABASE_URL", "") %>
 
