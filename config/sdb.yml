@@ -8,7 +8,7 @@
         driver: org.h2.Driver
         sdb: jdbc:h2:dev_incoming
         username: sa
-        password: 
+        password:
         db_type: H2
         db_layout: layout2/hash
       staging:
@@ -16,7 +16,7 @@
         driver: org.h2.Driver
         sdb:  jdbc:h2:dev_staging
         username: sa
-        password: 
+        password:
         db_type: H2
         db_layout: layout2/hash
       archive:
@@ -24,7 +24,7 @@
         driver: org.h2.Driver
         sdb:  jdbc:h2:dev_archive
         username: sa
-        password: 
+        password:
         db_type: H2
         db_layout: layout2/hash
       destination:
@@ -43,21 +43,21 @@
       incoming:
         sdb: jdbc:h2:test_incoming
         username: sa
-        password: 
+        password:
         driver: org.h2.Driver
         db_type: H2
         db_layout: layout2/hash
       staging:
         sdb:  jdbc:h2:test_staging
         username: sa
-        password: 
+        password:
         driver: org.h2.Driver
         db_type: H2
         db_layout: layout2/hash
       archive:
         sdb:  jdbc:h2:test_archive
         username: sa
-        password: 
+        password:
         driver: org.h2.Driver
         db_type: H2
         db_layout: layout2/hash
@@ -77,21 +77,21 @@
       incoming:
         sdb: jdbc:h2:incoming
         username: sa
-        password: 
+        password:
         driver: org.h2.Driver
         db_type: H2
         db_layout: layout2/hash
       staging:
         sdb:  jdbc:h2:staging
         username: sa
-        password: 
+        password:
         driver: org.h2.Driver
         db_type: H2
         db_layout: layout2/hash
       archive:
         sdb:  jdbc:h2:archive
         username: sa
-        password: 
+        password:
         driver: org.h2.Driver
         db_type: H2
         db_layout: layout2/hash
