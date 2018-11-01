@@ -1,7 +1,8 @@
 #require 'valium'
-studies = Aact::Study.for_vivo
+studies = Aact::Study.for_vivo[0..3]
 import_manager = VivoMapper::ImportManager.new(SDB_CONFIG,StdoutLogger.new(:only => [:add_to_destination,:remove_from_destination]))
 import_manager.truncate('staging')
+import_manager.truncate('destination')
 import_manager.simple_import('Study', studies)
 import_manager.export('Study','staging')
 

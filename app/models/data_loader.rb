@@ -4,6 +4,17 @@ class DataLoader
 
   attr_reader  :config, :import_manager
 
+  def self.load_studies
+    studies = Aact::Study.for_vivo[0..3]
+    import_manager = VivoMapper::ImportManager.new(SDB_CONFIG,StdoutLogger.new(:only => [:add_to_destination,:remove_from_destination]))
+    import_manager.truncate('staging')
+    import_manager.truncate('destination')
+    import_manager.simple_import('Study', studies)
+    import_manager.export('Study','staging')
+
+    import_manager.export('http://vitro.mannlib.cornell.edu/default/vitro-kb-2','destination')
+  end
+
   def initialize
      @config = SDB_CONFIG
      @import_manager = VivoMapper::ImportManager.new(SDB_CONFIG,StdoutLogger.new(:only => [:add_to_destination,:remove_from_destination]))
@@ -27,7 +38,7 @@ class DataLoader
     total_grants = 0
     alphabet.each do |letter|
       puts ">>> #{Time.now.strftime('%I:%M%p')} retrieving #{letter} grants..."
-      grants=Grant.for_vivo_sponsor_initial(letter) 
+      grants=Grant.for_vivo_sponsor_initial(letter)
       total_grants += grants.size
       puts ">>> #{Time.now.strftime('%I:%M%p')} #{letter}: importing #{grants.size} grants.  Cumulative total: #{total_grants}"
       import(:simple_import,'Grant',grants) if grants.size > 0
@@ -42,7 +53,7 @@ class DataLoader
     meth =  type_of_import.to_sym
     import(meth,'Grant',Grant.for_vivo)
   end
-  
+
   def load_courses(type_of_import=:difference_import, strm='1390')
     meth = type_of_import.to_sym
     import(meth, 'Course', Course.for_strm_and_duids(strm, Person.duids_for_vivo))

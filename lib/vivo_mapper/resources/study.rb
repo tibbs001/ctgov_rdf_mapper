@@ -1,10 +1,10 @@
 require 'date'
 module VivoMapper
   class Study < Resource
-    attr_reader :nct_id, :phase, :brief_title, :description, :enrollment
+    attr_reader :nct_id, :phase, :brief_title, :official_title, :acronym, :description, :enrollment, :all_interventions, :all_conditions
 
     def initialize(attributes = {})
-      [:nct_id, :phase, :brief_title, :description, :enrollment].each do |attr|
+      [:nct_id, :phase, :brief_title, :official_title, :acronym, :description, :enrollment, :all_interventions, :all_conditions].each do |attr|
         instance_variable_set("@#{attr}", attributes.send(attr.to_sym))
       end
       super()

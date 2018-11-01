@@ -28,5 +28,13 @@ module Aact
       studies
     end
 
+    def all_conditions
+      'all_conditions'
+    end
+
+    def all_interventions
+      'all_interventions'
+    end
+
   end
 end
